@@ -1,10 +1,13 @@
-import React, { Component } from 'react';
-import { Text, 
-  View, 
-  StyleSheet, 
-  TextInput, 
-  TouchableHighlight, 
-  Platform 
+import React, {
+  Component
+} from 'react';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  TouchableHighlight,
+  Platform
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import Header from './Helpers/Header';
@@ -29,7 +32,7 @@ class Main extends Component {
     });
   }
 
-  handleSubmit(event) {
+  handleSubmit() {
     this.setState({
       isLoading: true
     });

@@ -17,7 +17,9 @@ var Api = {
   getNotes(username) {
     username = username.toLowerCase().trim();
     var url = `https://smp-github-react.firebaseio.com/${username}.json`;
-    return fetch(url).then((res) => res.json()).catch((error) => { console.error(error); });
+    return fetch(url).then((res) => res.json()).catch((error) => {
+      console.error(error);
+    });
   },
   addNote(username, note) {
     username = username.toLowerCase().trim();

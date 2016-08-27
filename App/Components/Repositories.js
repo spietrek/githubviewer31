@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
-import { ScrollView, 
-  View, 
-  Text, 
-  TouchableHighlight, 
-  StyleSheet, 
+import React, {
+  Component
+} from 'react';
+import {
+  ScrollView,
+  View,
+  Text,
+  TouchableHighlight,
+  StyleSheet,
   Platform
 } from 'react-native';
 import NavigationBar from 'react-native-navbar';

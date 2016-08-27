@@ -1,5 +1,13 @@
-import React, { Component } from 'react';
-import { Text, View, StyleSheet, TouchableHighlight, Platform } from 'react-native';
+import React, {
+  Component
+} from 'react';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableHighlight,
+  Platform
+} from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import Header from './Helpers/Header';
 import Profile from './Profile';
@@ -164,10 +172,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'white',
     alignSelf: 'center'
-  },
-  title: {
-    color: 'black',
-    fontSize: 30
   }
 });
 

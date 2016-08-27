@@ -44,7 +44,7 @@ class Notes extends Component {
       note: ''
     });
     Api.addNote(this.props.userInfo.login, note)
-      .then((data) => {
+      .then(() => {
         Api.getNotes(this.props.userInfo.login)
           .then((notes) => {
             this.setState({
@@ -62,7 +62,7 @@ class Notes extends Component {
 
   deleteNote(rowID, userInfo) {
     Api.deleteNote(userInfo.login, rowID)
-      .then((data) => {
+      .then(() => {
         Api.getNotes(userInfo.login)
           .then((notes) => {
             this.setState({
@@ -214,11 +214,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'white'
   },
-  redButtonText: {
-    fontSize: 18,
-    color: 'red',
-    fontWeight: 'bold'
-  },
   button: {
     height: 50,
     backgroundColor: '#48BBEC',
@@ -233,9 +228,6 @@ const styles = StyleSheet.create({
     color: '#111',
     flex: 8
   },
-  rowContainer: {
-    padding: 10,
-  },
   editorContainer: {
     backgroundColor: '#E3E3E3',
     alignItems: 'center',
@@ -249,12 +241,6 @@ const styles = StyleSheet.create({
     margin: 15,
     fontSize: 16,
     flex: 12
-  },
-  deleteButton: {
-    width: 25,
-    margin: 10,
-    alignItems: 'center',
-    justifyContent: 'center'
   }
 });
 

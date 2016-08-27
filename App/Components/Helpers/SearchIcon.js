@@ -1,5 +1,9 @@
-import React, { Component } from 'react';
-import { TouchableOpacity, Image
+import React, {
+  Component
+} from 'react';
+import {
+  TouchableOpacity,
+  Image
 } from 'react-native';
 
 class SearchIcon extends Component {
